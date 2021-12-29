@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AssessmentItemCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwK-co-nCM">
+                    <rect key="frame" x="0.0" y="0.0" width="426" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iforward_100px" translatesAutoresizingMaskIntoConstraints="NO" id="YJY-v5-GpC">
+                            <rect key="frame" x="400" y="26" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="KN0-3W-0Cu"/>
+                                <constraint firstAttribute="height" constant="18" id="eZX-nG-yHt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assessment Folder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-On-EbM">
+                            <rect key="frame" x="20" y="25" width="146" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="hJB-MC-a9d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="4JO-jr-4g4"/>
+                        <constraint firstItem="YJY-v5-GpC" firstAttribute="centerY" secondItem="CwK-co-nCM" secondAttribute="centerY" id="4fb-X3-HAi"/>
+                        <constraint firstAttribute="trailing" secondItem="YJY-v5-GpC" secondAttribute="trailing" constant="8" id="dk1-DI-wbp"/>
+                        <constraint firstItem="BMf-On-EbM" firstAttribute="centerY" secondItem="YJY-v5-GpC" secondAttribute="centerY" id="exx-ot-gbX"/>
+                        <constraint firstItem="BMf-On-EbM" firstAttribute="leading" secondItem="CwK-co-nCM" secondAttribute="leadingMargin" constant="12" id="ihy-s0-5MX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CwK-co-nCM" secondAttribute="trailing" id="7VE-IE-zdn"/>
+                <constraint firstAttribute="bottom" secondItem="CwK-co-nCM" secondAttribute="bottom" id="AQe-vJ-mpJ"/>
+                <constraint firstItem="CwK-co-nCM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M6S-5i-u7B"/>
+                <constraint firstItem="CwK-co-nCM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TJg-KB-IYP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="CwK-co-nCM" id="oC0-To-MpT"/>
+                <outlet property="titleLabel" destination="BMf-On-EbM" id="7E1-tR-B7V"/>
+            </connections>
+            <point key="canvasLocation" x="215.94202898550725" y="-35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iforward_100px" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YesNoQuestionCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAm-uC-rbd">
+                    <rect key="frame" x="0.0" y="0.0" width="491" height="182"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rv1-fZ-vWb">
+                            <rect key="frame" x="10" y="5" width="471" height="172"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="172" id="wtd-o2-NhH"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="Rv1-fZ-vWb" firstAttribute="leading" secondItem="VAm-uC-rbd" secondAttribute="leading" constant="10" id="3b0-rv-ExB"/>
+                        <constraint firstAttribute="bottom" secondItem="Rv1-fZ-vWb" secondAttribute="bottom" constant="5" id="Zdf-aE-fTZ"/>
+                        <constraint firstItem="Rv1-fZ-vWb" firstAttribute="top" secondItem="VAm-uC-rbd" secondAttribute="top" constant="5" id="mF2-uB-Y2m"/>
+                        <constraint firstItem="Rv1-fZ-vWb" firstAttribute="centerX" secondItem="VAm-uC-rbd" secondAttribute="centerX" id="vIt-kJ-wWt"/>
+                        <constraint firstAttribute="trailing" secondItem="Rv1-fZ-vWb" secondAttribute="trailing" constant="10" id="zvQ-PK-PhS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VAm-uC-rbd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ic6-L9-5Ze"/>
+                <constraint firstAttribute="bottom" secondItem="VAm-uC-rbd" secondAttribute="bottom" id="S6l-QB-jta"/>
+                <constraint firstAttribute="trailing" secondItem="VAm-uC-rbd" secondAttribute="trailing" id="WvC-Rf-bLC"/>
+                <constraint firstItem="VAm-uC-rbd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qWI-aQ-UOC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="VAm-uC-rbd" id="Qtr-FR-Iup"/>
+                <outlet property="myTableView" destination="Rv1-fZ-vWb" id="9Ni-dt-Dul"/>
+                <outlet property="tableViewHeightConstraint" destination="wtd-o2-NhH" id="0rs-za-qC3"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="-140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

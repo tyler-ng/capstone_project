@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RiskFactorCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOA-e4-Q4h">
+                    <rect key="frame" x="0.0" y="0.0" width="441" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History of Falls" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKC-Rq-dBn">
+                            <rect key="frame" x="15" y="10" width="411" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="ram-X3-1jz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AKC-Rq-dBn" secondAttribute="bottom" constant="11" id="Oxg-EG-Dqr"/>
+                        <constraint firstItem="AKC-Rq-dBn" firstAttribute="leading" secondItem="JOA-e4-Q4h" secondAttribute="leading" constant="15" id="SW1-vl-KYh"/>
+                        <constraint firstItem="AKC-Rq-dBn" firstAttribute="top" secondItem="JOA-e4-Q4h" secondAttribute="top" constant="10" id="aOH-aH-ASX"/>
+                        <constraint firstAttribute="trailing" secondItem="AKC-Rq-dBn" secondAttribute="trailing" constant="15" id="oAr-YE-NkK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JOA-e4-Q4h" secondAttribute="bottom" id="5YN-DF-HZ9"/>
+                <constraint firstItem="JOA-e4-Q4h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QEM-ru-0LU"/>
+                <constraint firstItem="JOA-e4-Q4h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hJe-MX-twC"/>
+                <constraint firstAttribute="trailing" secondItem="JOA-e4-Q4h" secondAttribute="trailing" id="iwS-uH-PtS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="JOA-e4-Q4h" id="W4W-wT-KTs"/>
+                <outlet property="titleLabel" destination="AKC-Rq-dBn" id="KJA-6j-vqY"/>
+            </connections>
+            <point key="canvasLocation" x="151.44927536231884" y="-150"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FormMetadataCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOK-xt-Jb7">
+                    <rect key="frame" x="0.0" y="0.0" width="416" height="300"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LkM-EV-ebH">
+                            <rect key="frame" x="10" y="10" width="396" height="280"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="280" id="M1m-aD-Qp8"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="LkM-EV-ebH" firstAttribute="leading" secondItem="EOK-xt-Jb7" secondAttribute="leading" constant="10" id="3db-iF-Tka"/>
+                        <constraint firstItem="LkM-EV-ebH" firstAttribute="top" secondItem="EOK-xt-Jb7" secondAttribute="top" constant="10" id="E7B-kw-6tv"/>
+                        <constraint firstAttribute="trailing" secondItem="LkM-EV-ebH" secondAttribute="trailing" constant="10" id="Mtf-Hx-Nvx"/>
+                        <constraint firstAttribute="bottom" secondItem="LkM-EV-ebH" secondAttribute="bottom" constant="10" id="wGk-ON-aT2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EOK-xt-Jb7" secondAttribute="bottom" id="7AS-bL-7Yw"/>
+                <constraint firstItem="EOK-xt-Jb7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eqW-T8-5CP"/>
+                <constraint firstItem="EOK-xt-Jb7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mXP-EV-Ehv"/>
+                <constraint firstAttribute="trailing" secondItem="EOK-xt-Jb7" secondAttribute="trailing" id="vwX-pi-pxf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="EOK-xt-Jb7" id="dAM-2o-Hfi"/>
+                <outlet property="myTableView" destination="LkM-EV-ebH" id="Drh-WU-9dh"/>
+                <outlet property="tableViewHeightContraint" destination="M1m-aD-Qp8" id="9mh-Mt-szF"/>
+            </connections>
+            <point key="canvasLocation" x="-15.942028985507248" y="-63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MultipleChoiceWithInputQuestionCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kuy-we-5JK">
+                    <rect key="frame" x="0.0" y="0.0" width="431" height="260"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-Q5-Zx8">
+                            <rect key="frame" x="10" y="5" width="411" height="250"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="b1d-J9-Xu7"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstItem="aKD-Q5-Zx8" firstAttribute="top" secondItem="Kuy-we-5JK" secondAttribute="top" constant="5" id="7ff-j4-6zO"/>
+                        <constraint firstItem="aKD-Q5-Zx8" firstAttribute="leading" secondItem="Kuy-we-5JK" secondAttribute="leading" constant="10" id="F2i-WM-5iP"/>
+                        <constraint firstAttribute="bottom" secondItem="aKD-Q5-Zx8" secondAttribute="bottom" constant="5" id="WQy-5z-7hS"/>
+                        <constraint firstAttribute="trailing" secondItem="aKD-Q5-Zx8" secondAttribute="trailing" constant="10" id="chC-Kz-TOZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kuy-we-5JK" secondAttribute="bottom" id="19p-fC-ag3"/>
+                <constraint firstAttribute="trailing" secondItem="Kuy-we-5JK" secondAttribute="trailing" id="Lo4-86-ZDu"/>
+                <constraint firstItem="Kuy-we-5JK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Lrn-ni-MgR"/>
+                <constraint firstItem="Kuy-we-5JK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zEJ-SB-kek"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="Kuy-we-5JK" id="rIx-Og-nht"/>
+                <outlet property="myTableView" destination="aKD-Q5-Zx8" id="jTL-sX-6X4"/>
+                <outlet property="tableViewHeightConstraint" destination="b1d-J9-Xu7" id="eVw-Lj-WJ0"/>
+            </connections>
+            <point key="canvasLocation" x="-103.62318840579711" y="-75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

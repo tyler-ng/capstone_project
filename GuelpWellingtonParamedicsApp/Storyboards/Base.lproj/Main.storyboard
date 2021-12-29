@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mcp-5f-kti">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Assessments View Controller-->
+        <scene sceneID="60U-XQ-2be">
+            <objects>
+                <viewController storyboardIdentifier="AssessmentsVC" id="IgD-oF-4Dv" customClass="AssessmentsViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ed-pq-QdH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-tO-KiL">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="reA-qR-zZM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zIk-tO-KiL" firstAttribute="bottom" secondItem="reA-qR-zZM" secondAttribute="bottom" id="5J8-Mr-Hcj"/>
+                            <constraint firstItem="zIk-tO-KiL" firstAttribute="trailing" secondItem="reA-qR-zZM" secondAttribute="trailing" id="OLZ-p8-HtL"/>
+                            <constraint firstItem="zIk-tO-KiL" firstAttribute="top" secondItem="reA-qR-zZM" secondAttribute="top" id="a1n-DE-wZ7"/>
+                            <constraint firstItem="zIk-tO-KiL" firstAttribute="leading" secondItem="reA-qR-zZM" secondAttribute="leading" id="h7y-BC-suY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LCW-cI-WOa"/>
+                    <connections>
+                        <outlet property="myTableView" destination="zIk-tO-KiL" id="1uO-b7-u5I"/>
+                        <segue destination="5AK-kQ-OnY" kind="show" identifier="showMobilityTUG" id="xMx-BQ-4Pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEx-xc-Fer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3575" y="2350"/>
+        </scene>
+        <!--Folders-->
+        <scene sceneID="22H-MB-dOi">
+            <objects>
+                <viewController storyboardIdentifier="AssessmentFolderVC" id="MO5-0J-5Ns" customClass="AssessementFoldersViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2XC-bk-1zz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pwh-rW-2b8">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bka-Qc-x67"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pwh-rW-2b8" firstAttribute="trailing" secondItem="bka-Qc-x67" secondAttribute="trailing" id="4HF-Rz-vgD"/>
+                            <constraint firstItem="pwh-rW-2b8" firstAttribute="bottom" secondItem="bka-Qc-x67" secondAttribute="bottom" id="Tkb-qa-bk7"/>
+                            <constraint firstItem="pwh-rW-2b8" firstAttribute="top" secondItem="bka-Qc-x67" secondAttribute="top" id="URD-lD-R24"/>
+                            <constraint firstItem="pwh-rW-2b8" firstAttribute="leading" secondItem="bka-Qc-x67" secondAttribute="leading" id="qL9-HC-L5v"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Assessments" image="assessements" id="zCu-Vb-q6I"/>
+                    <navigationItem key="navigationItem" title="Folders" id="DUU-Nk-Ufd">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-menu" id="lea-RN-syv">
+                            <connections>
+                                <action selector="menuWasTapped:" destination="MO5-0J-5Ns" id="QY9-LM-nIA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myTableView" destination="pwh-rW-2b8" id="obS-1M-nxW"/>
+                        <segue destination="IgD-oF-4Dv" kind="show" identifier="showAssessmentVC" id="dwy-5P-f1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9YP-s6-Jd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3575" y="1587"/>
+        </scene>
+        <!--Resources-->
+        <scene sceneID="KRV-83-QsA">
+            <objects>
+                <viewController id="cTC-iV-ABH" customClass="ResourcesViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kf5-0o-XVi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2CN-cd-6Z2">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O9j-dR-hSw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2CN-cd-6Z2" firstAttribute="trailing" secondItem="O9j-dR-hSw" secondAttribute="trailing" id="7Wh-Y0-5qq"/>
+                            <constraint firstItem="2CN-cd-6Z2" firstAttribute="top" secondItem="O9j-dR-hSw" secondAttribute="top" id="Fdr-fh-SW6"/>
+                            <constraint firstItem="2CN-cd-6Z2" firstAttribute="leading" secondItem="O9j-dR-hSw" secondAttribute="leading" id="nNC-Be-FNp"/>
+                            <constraint firstItem="2CN-cd-6Z2" firstAttribute="bottom" secondItem="O9j-dR-hSw" secondAttribute="bottom" id="zaN-7u-75w"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resources" image="resources" id="dzz-d0-eCJ"/>
+                    <navigationItem key="navigationItem" title="Resources" id="mTZ-g7-kIM">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-menu" id="Q5q-zi-7l2">
+                            <connections>
+                                <action selector="menuWasTapped:" destination="cTC-iV-ABH" id="wUX-xv-hBk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myTableView" destination="2CN-cd-6Z2" id="vAr-i4-Pks"/>
+                        <segue destination="L3h-j1-Qzj" kind="show" identifier="showResourceDetailsVC" id="ffJ-i3-Zfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oIk-SM-QwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="1586"/>
+        </scene>
+        <!--Resource Details View Controller-->
+        <scene sceneID="AhX-iC-WwI">
+            <objects>
+                <viewController storyboardIdentifier="ResourceDetailsVC" id="L3h-j1-Qzj" customClass="ResourceDetailsViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="slx-Q8-cRh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-oj-azO">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BBI-Qb-41M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXa-oj-azO" firstAttribute="bottom" secondItem="BBI-Qb-41M" secondAttribute="bottom" id="9f8-Vg-L0x"/>
+                            <constraint firstItem="aXa-oj-azO" firstAttribute="leading" secondItem="BBI-Qb-41M" secondAttribute="leading" id="NJQ-6e-J9j"/>
+                            <constraint firstItem="aXa-oj-azO" firstAttribute="trailing" secondItem="BBI-Qb-41M" secondAttribute="trailing" id="Nzi-ao-tiZ"/>
+                            <constraint firstItem="aXa-oj-azO" firstAttribute="top" secondItem="BBI-Qb-41M" secondAttribute="top" id="bTT-T0-VOE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2kf-Uh-lmU"/>
+                    <connections>
+                        <outlet property="myTableView" destination="aXa-oj-azO" id="lg2-jL-aqR"/>
+                        <segue destination="ny4-Mi-ohP" kind="show" identifier="showResourceWebVC" id="c5r-Sy-dSr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dit-P4-FIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234.78260869565219" y="2334.7826086956525"/>
+        </scene>
+        <!--Resource Web View Controller-->
+        <scene sceneID="l0k-7o-pLc">
+            <objects>
+                <viewController storyboardIdentifier="ResourceWebVC" id="ny4-Mi-ohP" customClass="ResourceWebViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5hv-jc-Hdt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-M0-bAo">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pTz-6L-5qD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hVT-M0-bAo" firstAttribute="trailing" secondItem="pTz-6L-5qD" secondAttribute="trailing" id="15N-Si-3sJ"/>
+                            <constraint firstItem="hVT-M0-bAo" firstAttribute="top" secondItem="pTz-6L-5qD" secondAttribute="top" id="6J1-Jn-1qI"/>
+                            <constraint firstItem="hVT-M0-bAo" firstAttribute="leading" secondItem="pTz-6L-5qD" secondAttribute="leading" id="RT2-fR-Nta"/>
+                            <constraint firstItem="hVT-M0-bAo" firstAttribute="bottom" secondItem="pTz-6L-5qD" secondAttribute="bottom" id="y8g-qz-2c7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QmQ-cS-qz5"/>
+                    <connections>
+                        <outlet property="webView" destination="hVT-M0-bAo" id="dDg-Xf-c93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CF0-jb-s8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234.78260869565219" y="3252.717391304348"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="jZ5-wc-Rcz">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" id="mcp-5f-kti" customClass="SignInViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIA-6r-i7C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyc-GY-qYY">
+                                <rect key="frame" x="20" y="112.66666666666667" width="168.66666666666666" height="44.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <color key="textColor" name="ColorBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In To Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEn-DY-jBZ">
+                                <rect key="frame" x="20" y="167" width="192" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-GU-lZD">
+                                <rect key="frame" x="20" y="269" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-cT-42r">
+                                <rect key="frame" x="20" y="368" width="75.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQv-Ml-pP1">
+                                <rect key="frame" x="20" y="298" width="374" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lO0-dh-5PF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CW-T1-PNm">
+                                <rect key="frame" x="20" y="397" width="374" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordTextField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrH-xE-0F0">
+                                <rect key="frame" x="20" y="565" width="374" height="46"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="GlN-Ud-iEv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInAction:" destination="mcp-5f-kti" eventType="touchUpInside" id="nkY-jv-WzE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-R1-G18">
+                                <rect key="frame" x="266" y="467" width="128" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By proceeding you also agree to the Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19F-aW-ecd">
+                                <rect key="frame" x="20" y="651" width="374" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Invalid email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuy-jo-bTb">
+                                <rect key="frame" x="20" y="344" width="374" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="invalidEmailLabel"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="21R-sH-nEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.86414176229999995" green="0.19691652060000001" blue="0.20190998909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Password should be minimum 6 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60g-Rb-mxq">
+                                <rect key="frame" x="20" y="443" width="374" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="8MI-ms-jiZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.86414176229999995" green="0.19691652060000001" blue="0.20190998909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cDs-JI-ioY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="0CW-T1-PNm" firstAttribute="top" secondItem="H0S-cT-42r" secondAttribute="bottom" constant="8" symbolic="YES" id="0KW-ym-VyQ"/>
+                            <constraint firstItem="0CW-T1-PNm" firstAttribute="leading" secondItem="H0S-cT-42r" secondAttribute="leading" id="0TB-xg-6X5"/>
+                            <constraint firstItem="VrH-xE-0F0" firstAttribute="leading" secondItem="0CW-T1-PNm" secondAttribute="leading" id="1Gr-G7-jIG"/>
+                            <constraint firstItem="0CW-T1-PNm" firstAttribute="height" secondItem="eQv-Ml-pP1" secondAttribute="height" id="3M6-FZ-Hgd"/>
+                            <constraint firstItem="19F-aW-ecd" firstAttribute="leading" secondItem="cDs-JI-ioY" secondAttribute="leading" constant="20" id="6aS-xR-clS"/>
+                            <constraint firstItem="19F-aW-ecd" firstAttribute="top" secondItem="VrH-xE-0F0" secondAttribute="bottom" constant="40" id="6sA-6V-R2T"/>
+                            <constraint firstItem="H0S-cT-42r" firstAttribute="leading" secondItem="eQv-Ml-pP1" secondAttribute="leading" id="76t-UK-p89"/>
+                            <constraint firstItem="dEn-DY-jBZ" firstAttribute="leading" secondItem="Gyc-GY-qYY" secondAttribute="leading" id="8Mp-3h-3vz"/>
+                            <constraint firstItem="dqd-R1-G18" firstAttribute="trailing" secondItem="0CW-T1-PNm" secondAttribute="trailing" id="AVy-Cc-kHI"/>
+                            <constraint firstItem="dEn-DY-jBZ" firstAttribute="top" secondItem="Gyc-GY-qYY" secondAttribute="bottom" constant="10" id="AsO-zC-oJ6"/>
+                            <constraint firstItem="60g-Rb-mxq" firstAttribute="top" secondItem="0CW-T1-PNm" secondAttribute="bottom" constant="6" id="DLm-Wn-7mZ"/>
+                            <constraint firstItem="dqd-R1-G18" firstAttribute="top" secondItem="0CW-T1-PNm" secondAttribute="bottom" constant="30" id="DfB-Mn-XP9"/>
+                            <constraint firstItem="60g-Rb-mxq" firstAttribute="width" secondItem="0CW-T1-PNm" secondAttribute="width" id="EWY-pn-3It"/>
+                            <constraint firstItem="Cuy-jo-bTb" firstAttribute="top" secondItem="eQv-Ml-pP1" secondAttribute="bottom" constant="6" id="FKC-YC-3ol"/>
+                            <constraint firstItem="VrH-xE-0F0" firstAttribute="top" secondItem="dqd-R1-G18" secondAttribute="bottom" constant="80" id="GXW-TO-Bjm"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cuy-jo-bTb" secondAttribute="trailing" symbolic="YES" id="Ha3-al-oHB"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" secondItem="19F-aW-ecd" secondAttribute="trailing" constant="20" id="IGm-pa-dJk"/>
+                            <constraint firstItem="eQv-Ml-pP1" firstAttribute="leading" secondItem="6Zk-GU-lZD" secondAttribute="leading" id="InF-Lz-OkC"/>
+                            <constraint firstItem="Cuy-jo-bTb" firstAttribute="width" secondItem="eQv-Ml-pP1" secondAttribute="width" id="Ipd-T7-gNl"/>
+                            <constraint firstItem="Gyc-GY-qYY" firstAttribute="leading" secondItem="cDs-JI-ioY" secondAttribute="leading" constant="20" id="LNP-CY-v6i"/>
+                            <constraint firstItem="VrH-xE-0F0" firstAttribute="trailing" secondItem="0CW-T1-PNm" secondAttribute="trailing" id="MgC-Jx-I8t"/>
+                            <constraint firstItem="6Zk-GU-lZD" firstAttribute="top" secondItem="dEn-DY-jBZ" secondAttribute="bottom" constant="74" id="OAr-QZ-IEe"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="H0S-cT-42r" secondAttribute="trailing" symbolic="YES" id="Q1B-JZ-T7B"/>
+                            <constraint firstItem="60g-Rb-mxq" firstAttribute="trailing" secondItem="0CW-T1-PNm" secondAttribute="trailing" id="RSO-yC-cWC"/>
+                            <constraint firstItem="eQv-Ml-pP1" firstAttribute="top" secondItem="6Zk-GU-lZD" secondAttribute="bottom" constant="8" symbolic="YES" id="SLw-OR-rc2"/>
+                            <constraint firstItem="Cuy-jo-bTb" firstAttribute="leading" secondItem="eQv-Ml-pP1" secondAttribute="leading" id="SZd-Vq-ope"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" secondItem="eQv-Ml-pP1" secondAttribute="trailing" constant="20" id="T4u-f1-jEj"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" secondItem="0CW-T1-PNm" secondAttribute="trailing" constant="20" id="TXv-2W-R1A"/>
+                            <constraint firstItem="60g-Rb-mxq" firstAttribute="leading" secondItem="0CW-T1-PNm" secondAttribute="leading" id="eZO-PY-ak3"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gyc-GY-qYY" secondAttribute="trailing" symbolic="YES" id="eo0-hf-OPk"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Zk-GU-lZD" secondAttribute="trailing" symbolic="YES" id="fEq-HU-hbp"/>
+                            <constraint firstItem="H0S-cT-42r" firstAttribute="top" secondItem="eQv-Ml-pP1" secondAttribute="bottom" constant="30" id="fTI-Dw-BVK"/>
+                            <constraint firstItem="eQv-Ml-pP1" firstAttribute="centerY" secondItem="OIA-6r-i7C" secondAttribute="centerY" constant="-50" id="ffB-s7-vbX"/>
+                            <constraint firstItem="dqd-R1-G18" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cDs-JI-ioY" secondAttribute="leading" symbolic="YES" id="rXc-EV-IA6"/>
+                            <constraint firstItem="6Zk-GU-lZD" firstAttribute="leading" secondItem="dEn-DY-jBZ" secondAttribute="leading" id="sRr-ae-sav"/>
+                            <constraint firstItem="cDs-JI-ioY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dEn-DY-jBZ" secondAttribute="trailing" symbolic="YES" id="xXK-ZO-2OF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="eQv-Ml-pP1" id="Swl-4w-tMS"/>
+                        <outlet property="forgotPasswordLabel" destination="dqd-R1-G18" id="0cp-ij-juH"/>
+                        <outlet property="invalidEmailText" destination="Cuy-jo-bTb" id="VUK-sN-MuR"/>
+                        <outlet property="invalidPasswordText" destination="60g-Rb-mxq" id="30y-yM-3Ga"/>
+                        <outlet property="passwordTextField" destination="0CW-T1-PNm" id="bOL-Ny-MLe"/>
+                        <outlet property="signInButton" destination="VrH-xE-0F0" id="vpr-BT-rcd"/>
+                        <segue destination="3s7-ro-us4" kind="show" identifier="showTabBarViewIdentifier" id="mrh-qq-tkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kd2-1k-p5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="-1060.5978260869565"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZGr-FP-bFw">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="3s7-ro-us4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AcH-QE-eVv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7R9-sR-mMB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RLt-UC-G5a" kind="relationship" relationship="viewControllers" id="6p2-DD-gc7"/>
+                        <segue destination="Ste-s9-l1n" kind="relationship" relationship="viewControllers" id="1fs-7G-Zag"/>
+                        <segue destination="Yex-Yg-2pj" kind="relationship" relationship="viewControllers" id="4Pd-3F-2Jg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nmz-1C-bJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="-136"/>
+        </scene>
+        <!--Assessments-->
+        <scene sceneID="9WY-Nz-gmW">
+            <objects>
+                <navigationController id="RLt-UC-G5a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assessments" id="6xP-c1-pyk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wYb-a1-OPq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MO5-0J-5Ns" kind="relationship" relationship="rootViewController" id="5od-x6-wTN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bh-Fl-8jo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3575" y="704"/>
+        </scene>
+        <!--Resources-->
+        <scene sceneID="vVC-RS-TOJ">
+            <objects>
+                <navigationController id="Ste-s9-l1n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Resources" id="dU1-lP-iy6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Koh-F6-BAq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cTC-iV-ABH" kind="relationship" relationship="rootViewController" id="xEg-7I-ziS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZi-4t-pab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="769"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fXn-9e-bxm">
+            <objects>
+                <navigationController id="Yex-Yg-2pj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="egv-QI-X2Z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uGt-zL-RQX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="STa-vQ-PXE" kind="relationship" relationship="rootViewController" id="60H-rz-89B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bf2-xZ-0VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="769"/>
+        </scene>
+        <!--Infor Protect Act View Controller-->
+        <scene sceneID="Zvy-8Z-chf">
+            <objects>
+                <viewController storyboardIdentifier="InforProtectActIdentifier" id="3oa-eS-cwN" customClass="InforProtectActViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B5G-GA-7Yh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-I8-6VW">
+                                <rect key="frame" x="20" y="0.0" width="374" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G2o-3E-GMb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G2o-3E-GMb" firstAttribute="trailing" secondItem="Y2L-I8-6VW" secondAttribute="trailing" constant="20" id="3OB-Rs-Uy3"/>
+                            <constraint firstItem="G2o-3E-GMb" firstAttribute="bottom" secondItem="Y2L-I8-6VW" secondAttribute="bottom" id="Fqk-xI-tsv"/>
+                            <constraint firstItem="Y2L-I8-6VW" firstAttribute="leading" secondItem="G2o-3E-GMb" secondAttribute="leading" constant="20" id="OWa-kf-isA"/>
+                            <constraint firstItem="Y2L-I8-6VW" firstAttribute="top" secondItem="G2o-3E-GMb" secondAttribute="top" id="QIi-fi-vdO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Y2L-I8-6VW" id="GcY-iw-McU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOZ-9h-EoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4102.898550724638" y="815.21739130434787"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="iJn-u8-zJe">
+            <objects>
+                <viewController storyboardIdentifier="ContactVC" id="STa-vQ-PXE" customClass="ContactsViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Onh-R8-1Ut">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="96H-tI-8cA">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uUM-tw-vwz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="96H-tI-8cA" firstAttribute="leading" secondItem="uUM-tw-vwz" secondAttribute="leading" id="jy4-eH-6s5"/>
+                            <constraint firstItem="96H-tI-8cA" firstAttribute="trailing" secondItem="uUM-tw-vwz" secondAttribute="trailing" id="l70-Zt-DIg"/>
+                            <constraint firstItem="96H-tI-8cA" firstAttribute="top" secondItem="uUM-tw-vwz" secondAttribute="top" id="mLU-zn-SqV"/>
+                            <constraint firstItem="96H-tI-8cA" firstAttribute="bottom" secondItem="uUM-tw-vwz" secondAttribute="bottom" id="rOI-PH-Nx9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="contacts" id="3OZ-ag-RqY"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="tAm-gN-IyB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-menu" id="1tM-z3-R8h">
+                            <connections>
+                                <action selector="menuWasTapped:" destination="STa-vQ-PXE" id="Yes-nb-78S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myTableView" destination="96H-tI-8cA" id="2ub-yk-8rV"/>
+                        <segue destination="flh-uf-ovW" kind="show" identifier="showSubContactVC" id="Cvi-Tw-GPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VxX-eL-bLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="1567"/>
+        </scene>
+        <!--MobilityTUG View Controller-->
+        <scene sceneID="Lp7-ev-BLW">
+            <objects>
+                <viewController storyboardIdentifier="MobilityTUGVC" id="5AK-kQ-OnY" customClass="MobilityTUGViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjP-8t-AJm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kb3-ho-kM8">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R8I-Ry-K75"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kb3-ho-kM8" firstAttribute="top" secondItem="R8I-Ry-K75" secondAttribute="top" id="1b1-Zw-05Z"/>
+                            <constraint firstItem="Kb3-ho-kM8" firstAttribute="trailing" secondItem="R8I-Ry-K75" secondAttribute="trailing" id="Jxo-XU-VfU"/>
+                            <constraint firstItem="Kb3-ho-kM8" firstAttribute="bottom" secondItem="R8I-Ry-K75" secondAttribute="bottom" id="hF3-FL-rqn"/>
+                            <constraint firstItem="Kb3-ho-kM8" firstAttribute="leading" secondItem="R8I-Ry-K75" secondAttribute="leading" id="sra-ZL-rU2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x7L-r8-LRr"/>
+                    <connections>
+                        <outlet property="myTableView" destination="Kb3-ho-kM8" id="Bct-2d-hpM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ae5-nr-636" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5041" y="3256"/>
+        </scene>
+        <!--Client Fall Risk View Controller-->
+        <scene sceneID="z0m-Qg-auX">
+            <objects>
+                <viewController storyboardIdentifier="ClientRiskFallVC" id="Elg-Ws-Q6y" customClass="ClientFallRiskViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTk-bQ-g5b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hUS-XK-dPU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sKQ-5T-ifQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hUS-XK-dPU" firstAttribute="leading" secondItem="sKQ-5T-ifQ" secondAttribute="leading" id="HB9-dD-gHC"/>
+                            <constraint firstItem="hUS-XK-dPU" firstAttribute="top" secondItem="sKQ-5T-ifQ" secondAttribute="top" id="WUk-vy-in3"/>
+                            <constraint firstItem="hUS-XK-dPU" firstAttribute="trailing" secondItem="sKQ-5T-ifQ" secondAttribute="trailing" id="a99-Fp-Ol9"/>
+                            <constraint firstItem="hUS-XK-dPU" firstAttribute="bottom" secondItem="sKQ-5T-ifQ" secondAttribute="bottom" id="dOf-rY-2tI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="hUS-XK-dPU" id="AQp-Sr-Dfm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vw3-kP-h3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4117" y="3256"/>
+        </scene>
+        <!--Edmonton Sympton View Controller-->
+        <scene sceneID="5EM-Ti-6Ux">
+            <objects>
+                <viewController storyboardIdentifier="EdmontonSymptonVC" id="ha9-Fn-1wI" customClass="EdmontonSymptonViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlh-N5-av9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4zk-e7-NgL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C5b-3h-6RS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4zk-e7-NgL" firstAttribute="leading" secondItem="C5b-3h-6RS" secondAttribute="leading" id="1y2-AN-sYF"/>
+                            <constraint firstItem="4zk-e7-NgL" firstAttribute="top" secondItem="C5b-3h-6RS" secondAttribute="top" id="Eft-Fo-ZqI"/>
+                            <constraint firstItem="4zk-e7-NgL" firstAttribute="trailing" secondItem="C5b-3h-6RS" secondAttribute="trailing" id="YBI-5K-DRp"/>
+                            <constraint firstItem="4zk-e7-NgL" firstAttribute="bottom" secondItem="C5b-3h-6RS" secondAttribute="bottom" id="tlx-LV-SBB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="4zk-e7-NgL" id="E64-1U-Gyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KM-G2-IEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3141" y="3256"/>
+        </scene>
+        <!--Alcohol Withdrawal View Controller-->
+        <scene sceneID="1rI-qG-wHE">
+            <objects>
+                <viewController storyboardIdentifier="AlcoholWithdrawalVC" id="ByX-ZC-E3A" customClass="AlcoholWithdrawalViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBB-Mk-t9t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-PF-sOr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y65-fi-4gd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hVk-PF-sOr" firstAttribute="trailing" secondItem="Y65-fi-4gd" secondAttribute="trailing" id="BFi-4J-DWe"/>
+                            <constraint firstItem="hVk-PF-sOr" firstAttribute="bottom" secondItem="Y65-fi-4gd" secondAttribute="bottom" id="mrg-8o-glp"/>
+                            <constraint firstItem="hVk-PF-sOr" firstAttribute="top" secondItem="Y65-fi-4gd" secondAttribute="top" id="pDb-R1-5fn"/>
+                            <constraint firstItem="hVk-PF-sOr" firstAttribute="leading" secondItem="Y65-fi-4gd" secondAttribute="leading" id="sd7-1C-C0V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="hVk-PF-sOr" id="q2j-W9-4QK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGc-gz-Zi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2230" y="3256"/>
+        </scene>
+        <!--Mini Mental State View Controller-->
+        <scene sceneID="SWV-Gz-Xle">
+            <objects>
+                <viewController storyboardIdentifier="MiniMentalStateVC" id="7D6-S5-MNh" customClass="MiniMentalStateViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZH-M7-9yY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HFx-jB-dKY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fCG-Lc-C85"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HFx-jB-dKY" firstAttribute="bottom" secondItem="fCG-Lc-C85" secondAttribute="bottom" id="bj0-iA-eBh"/>
+                            <constraint firstItem="HFx-jB-dKY" firstAttribute="trailing" secondItem="fCG-Lc-C85" secondAttribute="trailing" id="f3q-NT-k2p"/>
+                            <constraint firstItem="HFx-jB-dKY" firstAttribute="top" secondItem="fCG-Lc-C85" secondAttribute="top" id="gbX-IU-4eh"/>
+                            <constraint firstItem="HFx-jB-dKY" firstAttribute="leading" secondItem="fCG-Lc-C85" secondAttribute="leading" id="omn-D3-mUi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="HFx-jB-dKY" id="nWs-4c-7cS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N13-mw-H7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1191" y="3253"/>
+        </scene>
+        <!--Sub Contact View Controller-->
+        <scene sceneID="dyD-i4-mPI">
+            <objects>
+                <viewController storyboardIdentifier="SubContactVC" id="flh-uf-ovW" customClass="SubContactViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PWW-nm-mD4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-u6-cDY">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Dk-3M-Aub"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OEr-u6-cDY" firstAttribute="bottom" secondItem="3Dk-3M-Aub" secondAttribute="bottom" id="9ZD-aS-PCb"/>
+                            <constraint firstItem="OEr-u6-cDY" firstAttribute="top" secondItem="3Dk-3M-Aub" secondAttribute="top" id="WPO-s5-AKk"/>
+                            <constraint firstItem="OEr-u6-cDY" firstAttribute="trailing" secondItem="3Dk-3M-Aub" secondAttribute="trailing" id="i11-Qk-Jm8"/>
+                            <constraint firstItem="OEr-u6-cDY" firstAttribute="leading" secondItem="3Dk-3M-Aub" secondAttribute="leading" id="nla-7x-aAj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wXS-jz-KOA"/>
+                    <connections>
+                        <outlet property="myTableView" destination="OEr-u6-cDY" id="Kzd-u5-jG3"/>
+                        <segue destination="R3C-lX-2W8" kind="show" identifier="showContactDetailsVC" id="dds-9a-ezu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlZ-uE-ADB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="2335"/>
+        </scene>
+        <!--Contact Details View Controller-->
+        <scene sceneID="Elx-8k-IWc">
+            <objects>
+                <viewController storyboardIdentifier="ContactDetailsVC" id="R3C-lX-2W8" customClass="ContactDetailsViewController" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fte-oW-Bqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-e2-PZR">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PbD-Cf-bVX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBM-e2-PZR" firstAttribute="leading" secondItem="PbD-Cf-bVX" secondAttribute="leading" id="2Cx-Hz-XdG"/>
+                            <constraint firstItem="gBM-e2-PZR" firstAttribute="top" secondItem="PbD-Cf-bVX" secondAttribute="top" id="goi-Gr-07S"/>
+                            <constraint firstItem="gBM-e2-PZR" firstAttribute="trailing" secondItem="PbD-Cf-bVX" secondAttribute="trailing" id="ouh-8I-GhS"/>
+                            <constraint firstItem="gBM-e2-PZR" firstAttribute="bottom" secondItem="PbD-Cf-bVX" secondAttribute="bottom" id="rjK-1z-B4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xc5-kx-Idb"/>
+                    <connections>
+                        <outlet property="myTableView" destination="gBM-e2-PZR" id="ts2-wh-dkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3M-Aa-QVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="3253"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="assessements" width="25" height="25"/>
+        <image name="contacts" width="25" height="25"/>
+        <image name="icons8-menu" width="24" height="24"/>
+        <image name="resources" width="25" height="25"/>
+        <namedColor name="AccentColor">
+            <color red="0.13333333333333333" green="0.32156862745098042" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="ColorBlue">
+            <color red="0.13300000131130219" green="0.32199999690055847" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

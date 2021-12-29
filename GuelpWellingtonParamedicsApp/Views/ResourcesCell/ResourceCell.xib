@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResourceCell" customModule="GuelpWellingtonParamedicsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tb7-f7-Q0t">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ontarioCP" translatesAutoresizingMaskIntoConstraints="NO" id="McP-TS-4rf">
+                            <rect key="frame" x="20" y="15" width="60" height="60"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="ckq-iH-Xbt"/>
+                                <constraint firstAttribute="height" constant="60" id="uvz-Eo-Cdm"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resource Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffC-ui-Lre">
+                            <rect key="frame" x="102" y="35" width="293" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ffC-ui-Lre" secondAttribute="trailing" constant="19" id="5QI-2v-NAV"/>
+                        <constraint firstItem="ffC-ui-Lre" firstAttribute="top" secondItem="tb7-f7-Q0t" secondAttribute="top" constant="35" id="7EN-K9-eZa"/>
+                        <constraint firstItem="McP-TS-4rf" firstAttribute="leading" secondItem="tb7-f7-Q0t" secondAttribute="leading" constant="20" id="P1b-W4-kbu"/>
+                        <constraint firstItem="ffC-ui-Lre" firstAttribute="leading" secondItem="McP-TS-4rf" secondAttribute="trailing" constant="22" id="Qg3-Gr-hoB"/>
+                        <constraint firstItem="McP-TS-4rf" firstAttribute="centerY" secondItem="ffC-ui-Lre" secondAttribute="centerY" id="TXj-0d-tRF"/>
+                        <constraint firstAttribute="bottom" secondItem="McP-TS-4rf" secondAttribute="bottom" constant="15" id="Txo-VQ-cL9"/>
+                        <constraint firstItem="McP-TS-4rf" firstAttribute="top" secondItem="tb7-f7-Q0t" secondAttribute="top" constant="15" id="fC5-TH-aG5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tb7-f7-Q0t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1i7-wH-XXf"/>
+                <constraint firstItem="tb7-f7-Q0t" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="2DO-R7-3GO"/>
+                <constraint firstAttribute="bottom" secondItem="tb7-f7-Q0t" secondAttribute="bottom" id="CEl-qx-Dnu"/>
+                <constraint firstItem="tb7-f7-Q0t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oik-Lv-wK1"/>
+                <constraint firstAttribute="trailing" secondItem="tb7-f7-Q0t" secondAttribute="trailing" id="RO0-6K-FHB"/>
+                <constraint firstItem="tb7-f7-Q0t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VT0-Zh-S93"/>
+                <constraint firstItem="tb7-f7-Q0t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="t4O-VL-fBW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="locationLabel" destination="ffC-ui-Lre" id="sdw-Ax-HFQ"/>
+                <outlet property="mainView" destination="tb7-f7-Q0t" id="n6E-Ao-8lB"/>
+                <outlet property="resourceImage" destination="McP-TS-4rf" id="mmF-oy-4Pp"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-135.26785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ontarioCP" width="294" height="350"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
