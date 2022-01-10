@@ -1,0 +1,6 @@
+framework module Pods_ParamedicsApp {
+  umbrella header "Pods-ParamedicsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

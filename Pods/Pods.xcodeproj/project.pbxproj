@@ -42,10 +42,12 @@
 		3846AFE38D1B63A9F0D9073C4ABC6DAA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E460EA9AE324B4AA55634C4B4CEFB5 /* SideMenuNavigationController.swift */; };
 		38E47E5CB4C5A37EFA455A40C8750AC3 /* Notification+SkeletonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502685D29BFA0BCB4D70013B83D2186 /* Notification+SkeletonFlow.swift */; };
 		39038D40C68045A5527629F9D597442B /* SkeletonCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FD1CD143D599C677BFF5990BB94EAD /* SkeletonCollectionDataSource.swift */; };
+		3C46A21DA7B999FF2ACE1C7CFDA5F9CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16F15DDF6B4A132FB65F10EA8AC5BF /* Foundation.framework */; };
 		3D12FC30FD5EF23309034F623CA9C3DD /* SkeletonDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A79AD39955E33416BF7D3F09EC867 /* SkeletonDebug.swift */; };
 		3E18B004D34ED5441A193684EEB25BD3 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFCF8A5D72FD4E8CBBE81F11EEFC72 /* SideMenuPresentationStyle.swift */; };
 		3E99223973D747E35BD795AF0772F3EF /* SkeletonAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6E79F0047510AE041B1EECEFBEFCC /* SkeletonAppearance.swift */; };
 		40C31384DE05943C23CDF6D9881DA472 /* UIView+SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D899FF20E8B40558538CBDECA596CE /* UIView+SkeletonView.swift */; };
+		4146F573C719DD908CCD2D763A7401B5 /* Pods-ParamedicsApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D671028D6ED7572F65CA3642D8475DA /* Pods-ParamedicsApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4155FC03A06D19F35293B1C03A71A31A /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6584556DC88EDE84A9B4BC4B03DF736 /* ImageModifier.swift */; };
 		4310D12845E8F241E9B30C835796C3D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16F15DDF6B4A132FB65F10EA8AC5BF /* Foundation.framework */; };
 		453612DE3B5104BAD901913ECF575243 /* CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E0C6CFCA799D47523BBFF200DF426 /* CollectionSkeleton.swift */; };
@@ -59,7 +61,6 @@
 		5B49C65B1FD5704AFBB2A9228AC08D39 /* UIView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFF8D3F34A071C4E6AD18CE5D6B56A /* UIView+CollectionSkeleton.swift */; };
 		5C635E63BEFBD8EBA282CA5230C775D6 /* UILabel+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2F5D0FEADCA99A080B431F1053D37 /* UILabel+IBInspectable.swift */; };
 		607F62D7FF886ECD87DCCA4E9E7C2426 /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70318DE6238939AC245D831696D6BAFA /* KingfisherError.swift */; };
-		60EB815E4267A9245637B259B31BEF11 /* Pods-GuelpWellingtonParamedicsApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D72D1D5700ADDC33E4C95EA47D781381 /* Pods-GuelpWellingtonParamedicsApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624FE0A39FBA6BE77554ED55A8095A6E /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CCB15C79D269021F90EAAF9272DB04 /* DiskStorage.swift */; };
 		6AFE3BA236B011B0A168920301703EFD /* SkeletonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306FC89AD594FEB9B3E0C3181CEAD7E /* SkeletonType.swift */; };
 		6DF0D8F53550C8269F710524E77BFED0 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEA07386963A14D77B6C5F944E93E7 /* CALayer+Extensions.swift */; };
@@ -70,7 +71,6 @@
 		7207F9A8A821FF1EF3AA656320C21134 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F88A09170D7AF5CD0513AB3AF4C54 /* SizeExtensions.swift */; };
 		72A2F27DF72BF7EF24007059351C52A4 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876386547C0AD7B833833B777EBFA6B8 /* ImageTransition.swift */; };
 		746CE707DECD223D8CB63DA1C7BA635F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B15BDA51BDC454532ED2D9A1907C74 /* UIKit.framework */; };
-		75B5D2787374B09D9485474C885359CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE16F15DDF6B4A132FB65F10EA8AC5BF /* Foundation.framework */; };
 		77AF2098DDCCAAE0CE4A20725C466905 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26454C681CE1543A2CDD96B01E033E /* SideMenuManager.swift */; };
 		77E13ED147BC2F1D104F1833E721FAD6 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9354F7AD572608091CA2CF48DBD00DF0 /* CacheSerializer.swift */; };
 		7A6C82D888C7B8B797CFB72D8E32B8EC /* SkeletonAnimationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1955C5041E2C0BD17699B2725FC68D /* SkeletonAnimationBuilder.swift */; };
@@ -116,9 +116,9 @@
 		BB09415143FB50B7B19B299574D13444 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1DF3DEEBEC3FEA50B06AA6720E6E /* ImageDownloader.swift */; };
 		BD7675C9E3C0FDA15332040342AC06AB /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A74672CFBD65E17ADFB8A03A9DC1E /* Deprecated.swift */; };
 		BE878E910978C666ABA2C98F366EDDE6 /* SkeletonExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365915D5E961F7968DEB1BB1F29E339F /* SkeletonExtended.swift */; };
+		C1776BB22449E993755F7281BCFC0DEC /* Pods-ParamedicsApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CBC896AF66B53065C4E662ACEF0C1 /* Pods-ParamedicsApp-dummy.m */; };
 		C398E8FDC2A114EC9F6F65D27AD96900 /* SkeletonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5814EC2EFF2CC4BB4AB134DB2C38FB5 /* SkeletonLayer.swift */; };
 		C52DCC253564B1FB1AA8A9818A1BE5D5 /* SkeletonLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8866ADEA0C3FBF7A1C9C8C634046E028 /* SkeletonLayerBuilder.swift */; };
-		C57AB069AFE22E05AB5E70AD1092BB90 /* Pods-GuelpWellingtonParamedicsApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB3FC0D87B972B8B30E5AF786B431D /* Pods-GuelpWellingtonParamedicsApp-dummy.m */; };
 		C69210F29178275874E3E77A8F959760 /* SkeletonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015562F142F2FE1427706F0272C9533A /* SkeletonConfig.swift */; };
 		C74B22664BB27111E39A80724445D03F /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70358F7231AA45911C3EC5D443C0C0 /* ImageProgressive.swift */; };
 		C798DA148F7F666F393F2009DDF73E35 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CBF9EF2A5C871BB4B33250477D1AB2 /* Initializable.swift */; };
@@ -160,39 +160,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1DDB623FB86BB422461B8E9422AD604F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
-			remoteInfo = SideMenu;
-		};
-		80A6C35117ACED85C14E3E357F8776BB /* PBXContainerItemProxy */ = {
+		8B224BCBDCC29BA39CC72EF5445D6DDD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC3FC37599E0D5F635958009B4804742;
 			remoteInfo = VerticalSteppedSlider;
 		};
-		8C5C9BEB6F9D936C705D744156AAA146 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8022D22FAA6690B5E1C379C1BCE1491;
-			remoteInfo = Kingfisher;
-		};
-		D44E2B50572AC70793D9B5652787093E /* PBXContainerItemProxy */ = {
+		A4B20575ED1F42DEA6F4EC2A0E16FC88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CEEFD1CB630CA790F0396E2E24A4C8C;
 			remoteInfo = SkeletonView;
 		};
+		A7CEE37D3A8AB38E8A9C984608D803C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8022D22FAA6690B5E1C379C1BCE1491;
+			remoteInfo = Kingfisher;
+		};
+		C61204E43B6CBF49C273F7163C970FD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
+			remoteInfo = SideMenu;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		015562F142F2FE1427706F0272C9533A /* SkeletonConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonConfig.swift; path = SkeletonViewCore/Sources/Internal/SkeletonConfigs/SkeletonConfig.swift; sourceTree = "<group>"; };
-		05087A68B7A263C0DFA2956EC641D030 /* Pods-GuelpWellingtonParamedicsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuelpWellingtonParamedicsApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		05712B94497B684B6497B9BD2C4D28AD /* UICollectionView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UICollectionView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
 		07C3AA11CCAA82944809B3F19F2A7EBD /* SubviewsSkeletonables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubviewsSkeletonables.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/SubviewsSkeletonables.swift; sourceTree = "<group>"; };
 		0E5A79AD39955E33416BF7D3F09EC867 /* SkeletonDebug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonDebug.swift; path = SkeletonViewCore/Sources/Internal/Debug/SkeletonDebug.swift; sourceTree = "<group>"; };
@@ -213,12 +212,12 @@
 		26F6917775ACF0C52B3F34585C195A23 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		289E0C6CFCA799D47523BBFF200DF426 /* CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionSkeleton.swift; path = SkeletonViewCore/Sources/Internal/Collections/CollectionSkeleton.swift; sourceTree = "<group>"; };
 		29292F84C217D726F5FCFD1F9D25F46B /* AVAssetImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageDataProvider.swift; path = Sources/General/ImageSource/AVAssetImageDataProvider.swift; sourceTree = "<group>"; };
+		2D671028D6ED7572F65CA3642D8475DA /* Pods-ParamedicsApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParamedicsApp-umbrella.h"; sourceTree = "<group>"; };
 		313627508999756F8DBC2FC14B00E042 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E460EA9AE324B4AA55634C4B4CEFB5 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
 		32FFF8D3F34A071C4E6AD18CE5D6B56A /* UIView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
 		365915D5E961F7968DEB1BB1F29E339F /* SkeletonExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonExtended.swift; path = SkeletonViewCore/Sources/API/SkeletonExtended.swift; sourceTree = "<group>"; };
-		36CB3FC0D87B972B8B30E5AF786B431D /* Pods-GuelpWellingtonParamedicsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuelpWellingtonParamedicsApp-dummy.m"; sourceTree = "<group>"; };
 		372EDBAAEAF17E114B64195F79B31DD3 /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
 		38749033B5817E56FCA1CBEF30026BDB /* UITableView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UITableView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
 		38F9FBC8F5D01221BEA6A6651CC4AB75 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -235,6 +234,7 @@
 		42D5018C334B0AB517076496B079ED14 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
 		441D7186C71647CA6B10FB0CB157E56B /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
 		457652384F3DD0778EC57B12A99B6735 /* UIView+AssociatedObjects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AssociatedObjects.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+AssociatedObjects.swift"; sourceTree = "<group>"; };
+		46E6AC12D663B0484B6F0F1F70FA34ED /* Pods-ParamedicsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParamedicsApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		4804177F15A94BA7FBF72A66416FA07B /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Cache/Storage.swift; sourceTree = "<group>"; };
 		4972637D9E409E048C807DC257606B8F /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
 		49CDA5E6F321A9A0D94DB4CD463ACAC4 /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
@@ -250,19 +250,20 @@
 		54DE79ADDEAD1BAF2EEF6BD70B7B1350 /* SkeletonFlowHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonFlowHandler.swift; path = SkeletonViewCore/Sources/Internal/SkeletonFlowHandler.swift; sourceTree = "<group>"; };
 		5528CEB7969688CE346BA54A641EACAF /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/Utility/String+MD5.swift"; sourceTree = "<group>"; };
 		5529BE80ABA58E50B3619AD1B930DB12 /* UIColor+Skeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Skeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIColor+Skeleton.swift"; sourceTree = "<group>"; };
-		553E3679658AC5E41AB41DB8AF81C5C2 /* Pods-GuelpWellingtonParamedicsApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuelpWellingtonParamedicsApp-frameworks.sh"; sourceTree = "<group>"; };
 		5694CAC0949BEF38E6A9D482C30B356E /* VerticalSteppedSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VerticalSteppedSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		579E8A40C4C6B70A2B800CA90D4CF8D4 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/Image/ImageProcessor.swift; sourceTree = "<group>"; };
-		59B911B7BB0100284B64FDC70A4CB290 /* Pods-GuelpWellingtonParamedicsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuelpWellingtonParamedicsApp.release.xcconfig"; sourceTree = "<group>"; };
 		5D4E8F2EC80F0E4D688B39D92F8AD839 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		62311D5A030D8B5842AB32CCEEAC60D4 /* RecoverableViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecoverableViewState.swift; path = SkeletonViewCore/Sources/Internal/Models/RecoverableViewState.swift; sourceTree = "<group>"; };
 		63CBE64F47F6010127BCDDB38228AE7C /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
 		640FA461FA72ED02E7504DD99704B79A /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		649230D128B3C20AF9B674BD1AB59E3C /* Pods-ParamedicsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParamedicsApp.release.xcconfig"; sourceTree = "<group>"; };
 		6665B323A09320291C0F09B19D6F4320 /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
 		6749D24C90D616FCF610D6647C2BE1B1 /* SkeletonView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkeletonView-Info.plist"; sourceTree = "<group>"; };
 		678AEDD4118290BB0159F19C1765FD15 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		689417150A82D7BB3963EF89D44E86C4 /* ImageDataProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProcessor.swift; path = Sources/Networking/ImageDataProcessor.swift; sourceTree = "<group>"; };
+		693FF21E557113E0062EDD6AF8C8D391 /* Pods-ParamedicsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParamedicsApp.modulemap"; sourceTree = "<group>"; };
 		6AD21902F1D60F5DF816BA98CFC84227 /* RetryStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryStrategy.swift; path = Sources/Networking/RetryStrategy.swift; sourceTree = "<group>"; };
+		6BAF7E4B64652B4B5D1C23525549C42E /* Pods-ParamedicsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParamedicsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		70318DE6238939AC245D831696D6BAFA /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
 		7636FB6B2938DD1E8A609058B6F5BC1C /* PrepareViewForSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrepareViewForSkeleton.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/PrepareViewForSkeleton.swift; sourceTree = "<group>"; };
 		76D899FF20E8B40558538CBDECA596CE /* UIView+SkeletonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SkeletonView.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+SkeletonView.swift"; sourceTree = "<group>"; };
@@ -273,6 +274,7 @@
 		8184DAD54FDC129016236403AD99D3E7 /* Recursive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recursive.swift; path = SkeletonViewCore/Sources/Internal/Helpers/Recursive.swift; sourceTree = "<group>"; };
 		833DD8B980E3FEC1C990C2F341DD5D4C /* Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.release.xcconfig; sourceTree = "<group>"; };
 		8364631F4D47517FC98F07A54EECAF17 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/Utility/Delegate.swift; sourceTree = "<group>"; };
+		8422A49645FBC66D2A7BB4B013F27A52 /* Pods-ParamedicsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParamedicsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		85104EA364483CBCE288C1E0C986AC45 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Views/Indicator.swift; sourceTree = "<group>"; };
 		8679C84EA4B49CC90E2CD5EFDC14D8BE /* GraphicsContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphicsContext.swift; path = Sources/Image/GraphicsContext.swift; sourceTree = "<group>"; };
 		86F24F30F62C198B9078339EFA6CD3B0 /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
@@ -286,7 +288,6 @@
 		911DF7A23226F87F943E01F7879B896A /* VerticalSteppedSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VerticalSteppedSlider-dummy.m"; sourceTree = "<group>"; };
 		91ED67CA60AB9D8D60EF3EBCAB9BD7AE /* SkeletonTableViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTableViewProtocols.swift; path = SkeletonViewCore/Sources/API/Collections/TableViews/SkeletonTableViewProtocols.swift; sourceTree = "<group>"; };
 		920B04F4EDD769C5056728A684E780BE /* VerticalSteppedSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSteppedSlider-prefix.pch"; sourceTree = "<group>"; };
-		92885614845116DB2F2FD3A36EF61293 /* Pods_GuelpWellingtonParamedicsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuelpWellingtonParamedicsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9354F7AD572608091CA2CF48DBD00DF0 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
 		9382DA2956986D032B13EF5CB5D66D09 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
 		96D2F5D0FEADCA99A080B431F1053D37 /* UILabel+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+IBInspectable.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UILabel+IBInspectable.swift"; sourceTree = "<group>"; };
@@ -297,6 +298,7 @@
 		9D5CF08A6386C6238B084C7B99E12C85 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E25EEF0A926D68981F8B1B146CA6C9B /* KFOptionsSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFOptionsSetter.swift; path = Sources/General/KFOptionsSetter.swift; sourceTree = "<group>"; };
+		9E3CBC896AF66B53065C4E662ACEF0C1 /* Pods-ParamedicsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParamedicsApp-dummy.m"; sourceTree = "<group>"; };
 		A00F2C5284145AA9D3B2174C43A5FCC8 /* VerticalSteppedSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VerticalSteppedSlider.release.xcconfig; sourceTree = "<group>"; };
 		A4DE7DCE85086229575BCEE5788D917B /* SkeletonCollectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionDelegate.swift; path = SkeletonViewCore/Sources/Internal/Collections/SkeletonCollectionDelegate.swift; sourceTree = "<group>"; };
 		A648720A60F7ED850B827C941B570A62 /* KFImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFImageOptions.swift; path = Sources/SwiftUI/KFImageOptions.swift; sourceTree = "<group>"; };
@@ -307,7 +309,6 @@
 		A92162773B1AF3F9FD224E5FAFE2588E /* UITableView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A92753A583F4F620A50D4C093D6CD15D /* ImageBinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBinder.swift; path = Sources/SwiftUI/ImageBinder.swift; sourceTree = "<group>"; };
 		A95461C5526862FA24666BCA26308E1B /* SkeletonView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkeletonView.modulemap; sourceTree = "<group>"; };
-		AA1E0713E8620A2F2B2A7E84493B4C29 /* Pods-GuelpWellingtonParamedicsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuelpWellingtonParamedicsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7E7EB2C8855A1666D1A1FE94A3D11D /* KF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KF.swift; path = Sources/General/KF.swift; sourceTree = "<group>"; };
 		AEEB391B83D19011027DBE0A3F8ED4FC /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
 		B030ABD4E471600A35046B2D1FB21D41 /* UIView+Transitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Transitions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+Transitions.swift"; sourceTree = "<group>"; };
@@ -320,8 +321,8 @@
 		B5814EC2EFF2CC4BB4AB134DB2C38FB5 /* SkeletonLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayer.swift; path = SkeletonViewCore/Sources/Internal/Models/SkeletonLayer.swift; sourceTree = "<group>"; };
 		B59936C9DB43257ED6E3788C2DC4CCCA /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		B7A88D6EA8407454239AB0337178D309 /* SkeletonMultilineLayerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonMultilineLayerBuilder.swift; path = SkeletonViewCore/Sources/Internal/SkeletonLayerBuilders/SkeletonMultilineLayerBuilder.swift; sourceTree = "<group>"; };
+		B93A1ED3A409E56A3D54923107A3AF09 /* Pods_ParamedicsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParamedicsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC31626E011BD4EA19F3FB5BA688A817 /* SkeletonTreeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTreeNode.swift; path = SkeletonViewCore/Sources/Internal/SkeletonTree/SkeletonTreeNode.swift; sourceTree = "<group>"; };
-		BD4822BD575AF5079020506DBF406405 /* Pods-GuelpWellingtonParamedicsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuelpWellingtonParamedicsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BD70F319497CAE413DAB47D1BE0886FD /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		BEDD3A0C53B7A3BCD04247893297F9FE /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
 		BF13BDA7B11850A77D0F4D33F09873EE /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/Networking/RequestModifier.swift; sourceTree = "<group>"; };
@@ -334,6 +335,7 @@
 		CADFCF8A5D72FD4E8CBBE81F11EEFC72 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
 		CBA5FCAC88695CFE4E4E917C029AA03A /* SkeletonMultilinesLayerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonMultilinesLayerConfig.swift; path = SkeletonViewCore/Sources/Internal/SkeletonConfigs/SkeletonMultilinesLayerConfig.swift; sourceTree = "<group>"; };
 		CCE92ECC85EC8A05303D3C8348129CAC /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
+		CD9B90FE303F1DF90DB86CE2CA3E1D3F /* Pods-ParamedicsApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParamedicsApp-Info.plist"; sourceTree = "<group>"; };
 		CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF84E90DF8C31323E8E3EBD041AB8B2D /* Notification+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Notification+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/FoundationExtensions/Notification+Extensions.swift"; sourceTree = "<group>"; };
 		D0DD70287ADDC29EB7C5BA632210DE3F /* SkeletonReusableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonReusableCell.swift; path = SkeletonViewCore/Sources/Internal/Collections/SkeletonReusableCell.swift; sourceTree = "<group>"; };
@@ -344,7 +346,6 @@
 		D51DC9E7B1CB5352FDB90A1351DD88AC /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
 		D5D81B7D94DBDE5D348C3008785ED154 /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
 		D686214E62238B0C7F9670ABD58EC7AB /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
-		D72D1D5700ADDC33E4C95EA47D781381 /* Pods-GuelpWellingtonParamedicsApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuelpWellingtonParamedicsApp-umbrella.h"; sourceTree = "<group>"; };
 		D76FC28F8C9D264EF4D3F45DAAF7130F /* CALayer+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Animations.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/CALayer+Animations.swift"; sourceTree = "<group>"; };
 		D84BC3288DFCF4D28FA16EC0B19460F0 /* VerticalSteppedSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VerticalSteppedSlider-umbrella.h"; sourceTree = "<group>"; };
 		DCF63624D6D5D91AE794D38644163962 /* UILabel+SKExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+SKExtensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UILabel+SKExtensions.swift"; sourceTree = "<group>"; };
@@ -363,13 +364,12 @@
 		F2A3E55E6922BFBE920FD201D860E12B /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F3CCB15C79D269021F90EAAF9272DB04 /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
 		F5C3911F54E3A1D76CE818896D9203FD /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/General/ImageSource/Resource.swift; sourceTree = "<group>"; };
-		F6BA41D5D369706C171670A9E7BB2643 /* Pods-GuelpWellingtonParamedicsApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuelpWellingtonParamedicsApp-Info.plist"; sourceTree = "<group>"; };
 		F7630400F1AD49EC210F669C206A1FB3 /* KFImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFImage.swift; path = Sources/SwiftUI/KFImage.swift; sourceTree = "<group>"; };
 		FB02BF3CBF76167E0A67800917D4ED55 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
-		FBA1233D259ADA4899E4925FD1BA41B9 /* Pods-GuelpWellingtonParamedicsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuelpWellingtonParamedicsApp.modulemap"; sourceTree = "<group>"; };
 		FD0966EC801ACF37C7A3E2044D6DEACD /* GradientDirection+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GradientDirection+Animations.swift"; path = "SkeletonViewCore/Sources/Internal/SkeletonExtensions/GradientDirection+Animations.swift"; sourceTree = "<group>"; };
 		FE16F15DDF6B4A132FB65F10EA8AC5BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FFDA3F3D914360BF8B1D7CA5235E947F /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
+		FFF3DCBA0716DF38F70F7FF7B41CAF53 /* Pods-ParamedicsApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParamedicsApp-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,11 +391,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EAB1DFB91D8941E81C8738CA32BC640 /* Frameworks */ = {
+		9EBB9ADC07761495A65E96F17B95CC12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B5D2787374B09D9485474C885359CF /* Foundation.framework in Frameworks */,
+				3C46A21DA7B999FF2ACE1C7CFDA5F9CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,12 +434,16 @@
 			path = "../Target Support Files/SkeletonView";
 			sourceTree = "<group>";
 		};
-		220DE952EEB3B833C37FCD2C4E68707E /* Targets Support Files */ = {
+		23BB2D7A45E2C79785D17F43548A6E01 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EB10A3B5EE73F2E9AEE2A91C76066A4 /* Pods-GuelpWellingtonParamedicsApp */,
+				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */,
+				B93A1ED3A409E56A3D54923107A3AF09 /* Pods_ParamedicsApp.framework */,
+				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
+				CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView.framework */,
+				5694CAC0949BEF38E6A9D482C30B356E /* VerticalSteppedSlider.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		336AD8D69EBB70C8129394089BFD73B2 /* Support Files */ = {
@@ -481,23 +485,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SideMenu";
-			sourceTree = "<group>";
-		};
-		4EB10A3B5EE73F2E9AEE2A91C76066A4 /* Pods-GuelpWellingtonParamedicsApp */ = {
-			isa = PBXGroup;
-			children = (
-				FBA1233D259ADA4899E4925FD1BA41B9 /* Pods-GuelpWellingtonParamedicsApp.modulemap */,
-				BD4822BD575AF5079020506DBF406405 /* Pods-GuelpWellingtonParamedicsApp-acknowledgements.markdown */,
-				05087A68B7A263C0DFA2956EC641D030 /* Pods-GuelpWellingtonParamedicsApp-acknowledgements.plist */,
-				36CB3FC0D87B972B8B30E5AF786B431D /* Pods-GuelpWellingtonParamedicsApp-dummy.m */,
-				553E3679658AC5E41AB41DB8AF81C5C2 /* Pods-GuelpWellingtonParamedicsApp-frameworks.sh */,
-				F6BA41D5D369706C171670A9E7BB2643 /* Pods-GuelpWellingtonParamedicsApp-Info.plist */,
-				D72D1D5700ADDC33E4C95EA47D781381 /* Pods-GuelpWellingtonParamedicsApp-umbrella.h */,
-				AA1E0713E8620A2F2B2A7E84493B4C29 /* Pods-GuelpWellingtonParamedicsApp.debug.xcconfig */,
-				59B911B7BB0100284B64FDC70A4CB290 /* Pods-GuelpWellingtonParamedicsApp.release.xcconfig */,
-			);
-			name = "Pods-GuelpWellingtonParamedicsApp";
-			path = "Target Support Files/Pods-GuelpWellingtonParamedicsApp";
 			sourceTree = "<group>";
 		};
 		5B8B948FF7AA2029628F9BDD1027BB3A /* Kingfisher */ = {
@@ -564,6 +551,23 @@
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
+		7BBE7C104712B53A3DB6F763FAC3594F /* Pods-ParamedicsApp */ = {
+			isa = PBXGroup;
+			children = (
+				693FF21E557113E0062EDD6AF8C8D391 /* Pods-ParamedicsApp.modulemap */,
+				6BAF7E4B64652B4B5D1C23525549C42E /* Pods-ParamedicsApp-acknowledgements.markdown */,
+				46E6AC12D663B0484B6F0F1F70FA34ED /* Pods-ParamedicsApp-acknowledgements.plist */,
+				9E3CBC896AF66B53065C4E662ACEF0C1 /* Pods-ParamedicsApp-dummy.m */,
+				FFF3DCBA0716DF38F70F7FF7B41CAF53 /* Pods-ParamedicsApp-frameworks.sh */,
+				CD9B90FE303F1DF90DB86CE2CA3E1D3F /* Pods-ParamedicsApp-Info.plist */,
+				2D671028D6ED7572F65CA3642D8475DA /* Pods-ParamedicsApp-umbrella.h */,
+				8422A49645FBC66D2A7BB4B013F27A52 /* Pods-ParamedicsApp.debug.xcconfig */,
+				649230D128B3C20AF9B674BD1AB59E3C /* Pods-ParamedicsApp.release.xcconfig */,
+			);
+			name = "Pods-ParamedicsApp";
+			path = "Target Support Files/Pods-ParamedicsApp";
+			sourceTree = "<group>";
+		};
 		7DB04569F32416FFD539CD77898835AA /* VerticalSteppedSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +595,14 @@
 				B7D7A0F866DC3806C84588A0EC085968 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9E45B76CB50CF7D39690E90C18F3823 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BBE7C104712B53A3DB6F763FAC3594F /* Pods-ParamedicsApp */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CEF7206BBE123D378C9847C74B4AC519 /* SkeletonView */ = {
@@ -667,21 +679,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				3626C38956D71365E5C6B2A480155250 /* Pods */,
-				D106391347368D8BD72F4212C3EDCBDC /* Products */,
-				220DE952EEB3B833C37FCD2C4E68707E /* Targets Support Files */,
+				23BB2D7A45E2C79785D17F43548A6E01 /* Products */,
+				C9E45B76CB50CF7D39690E90C18F3823 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D106391347368D8BD72F4212C3EDCBDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */,
-				92885614845116DB2F2FD3A36EF61293 /* Pods_GuelpWellingtonParamedicsApp.framework */,
-				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
-				CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView.framework */,
-				5694CAC0949BEF38E6A9D482C30B356E /* VerticalSteppedSlider.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D2BF4F93A890DF652C17CFD330E85187 /* SideMenu */ = {
@@ -740,19 +740,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9673413B85E280C55355E01BBA9A3219 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146F573C719DD908CCD2D763A7401B5 /* Pods-ParamedicsApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA6915B7D39240E187C2D8080FA32564 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1A7C1F39B22572D782F3ABB7E6B06AB3 /* SkeletonView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C185ABFDB9C65783652C4E620DCE5CE6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				60EB815E4267A9245637B259B31BEF11 /* Pods-GuelpWellingtonParamedicsApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +767,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C2C6D88FE286F19224BBA164F27B5B2 /* Pods-ParamedicsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D2349E3CB2949AE9DB6D57B4718E81C /* Build configuration list for PBXNativeTarget "Pods-ParamedicsApp" */;
+			buildPhases = (
+				9673413B85E280C55355E01BBA9A3219 /* Headers */,
+				FE14EC2EA1D2EF09417765C00337D424 /* Sources */,
+				9EBB9ADC07761495A65E96F17B95CC12 /* Frameworks */,
+				2D2DB2BAF924B5DDAD5D6F679DBD548B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81124D99AF5363FFEA6BE4098D175512 /* PBXTargetDependency */,
+				3F99A953D20E5ECE16A2645E8B802A43 /* PBXTargetDependency */,
+				57062B5DD1245A1C56B637318F6F8B47 /* PBXTargetDependency */,
+				157763F13D32F4C5043C6E582C0BA487 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParamedicsApp";
+			productName = "Pods-ParamedicsApp";
+			productReference = B93A1ED3A409E56A3D54923107A3AF09 /* Pods_ParamedicsApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCC5E55779464207FB05B2024DF34FC0 /* Build configuration list for PBXNativeTarget "SkeletonView" */;
@@ -801,28 +823,6 @@
 			name = SideMenu;
 			productName = SideMenu;
 			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D6AAC5DBDCF1139CB01C984B95151380 /* Pods-GuelpWellingtonParamedicsApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38154177284030F3B872D69F37A804C5 /* Build configuration list for PBXNativeTarget "Pods-GuelpWellingtonParamedicsApp" */;
-			buildPhases = (
-				C185ABFDB9C65783652C4E620DCE5CE6 /* Headers */,
-				6ED799BB9C1C348BFB5B80851440E061 /* Sources */,
-				6EAB1DFB91D8941E81C8738CA32BC640 /* Frameworks */,
-				914F047E96A25DB929A6BF2D35270FF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				590FB99FC1EA76B634B1690EDADE04A2 /* PBXTargetDependency */,
-				AA988B0DC2CB103921988099DA19631A /* PBXTargetDependency */,
-				31CB32B66C4E4AEDE52528BB59B9C558 /* PBXTargetDependency */,
-				1C1E2C2F7DB58B289D56713782C550B6 /* PBXTargetDependency */,
-			);
-			name = "Pods-GuelpWellingtonParamedicsApp";
-			productName = "Pods-GuelpWellingtonParamedicsApp";
-			productReference = 92885614845116DB2F2FD3A36EF61293 /* Pods_GuelpWellingtonParamedicsApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DC3FC37599E0D5F635958009B4804742 /* VerticalSteppedSlider */ = {
@@ -868,7 +868,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -879,12 +879,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D106391347368D8BD72F4212C3EDCBDC /* Products */;
+			productRefGroup = 23BB2D7A45E2C79785D17F43548A6E01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */,
-				D6AAC5DBDCF1139CB01C984B95151380 /* Pods-GuelpWellingtonParamedicsApp */,
+				0C2C6D88FE286F19224BBA164F27B5B2 /* Pods-ParamedicsApp */,
 				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
 				8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */,
 				DC3FC37599E0D5F635958009B4804742 /* VerticalSteppedSlider */,
@@ -907,7 +907,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		914F047E96A25DB929A6BF2D35270FF1 /* Resources */ = {
+		2D2DB2BAF924B5DDAD5D6F679DBD548B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1009,14 +1009,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6ED799BB9C1C348BFB5B80851440E061 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C57AB069AFE22E05AB5E70AD1092BB90 /* Pods-GuelpWellingtonParamedicsApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B7A6B51F5DD73DE3F3F294B1BF713BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1103,36 +1095,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE14EC2EA1D2EF09417765C00337D424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1776BB22449E993755F7281BCFC0DEC /* Pods-ParamedicsApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1C1E2C2F7DB58B289D56713782C550B6 /* PBXTargetDependency */ = {
+		157763F13D32F4C5043C6E582C0BA487 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VerticalSteppedSlider;
 			target = DC3FC37599E0D5F635958009B4804742 /* VerticalSteppedSlider */;
-			targetProxy = 80A6C35117ACED85C14E3E357F8776BB /* PBXContainerItemProxy */;
+			targetProxy = 8B224BCBDCC29BA39CC72EF5445D6DDD /* PBXContainerItemProxy */;
 		};
-		31CB32B66C4E4AEDE52528BB59B9C558 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SkeletonView;
-			target = 8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */;
-			targetProxy = D44E2B50572AC70793D9B5652787093E /* PBXContainerItemProxy */;
-		};
-		590FB99FC1EA76B634B1690EDADE04A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Kingfisher;
-			target = E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */;
-			targetProxy = 8C5C9BEB6F9D936C705D744156AAA146 /* PBXContainerItemProxy */;
-		};
-		AA988B0DC2CB103921988099DA19631A /* PBXTargetDependency */ = {
+		3F99A953D20E5ECE16A2645E8B802A43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SideMenu;
 			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
-			targetProxy = 1DDB623FB86BB422461B8E9422AD604F /* PBXContainerItemProxy */;
+			targetProxy = C61204E43B6CBF49C273F7163C970FD3 /* PBXContainerItemProxy */;
+		};
+		57062B5DD1245A1C56B637318F6F8B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkeletonView;
+			target = 8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */;
+			targetProxy = A4B20575ED1F42DEA6F4EC2A0E16FC88 /* PBXContainerItemProxy */;
+		};
+		81124D99AF5363FFEA6BE4098D175512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			target = E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */;
+			targetProxy = A7CEE37D3A8AB38E8A9C984608D803C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		071DA7151294A97F043F756385898298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8422A49645FBC66D2A7BB4B013F27A52 /* Pods-ParamedicsApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParamedicsApp/Pods-ParamedicsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParamedicsApp/Pods-ParamedicsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0FC98422908F1DD0D387A15F641DABCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEEB391B83D19011027DBE0A3F8ED4FC /* SideMenu.release.xcconfig */;
@@ -1168,43 +1205,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		1357B33F4051C268D7E73540B9684632 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA1E0713E8620A2F2B2A7E84493B4C29 /* Pods-GuelpWellingtonParamedicsApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GuelpWellingtonParamedicsApp/Pods-GuelpWellingtonParamedicsApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GuelpWellingtonParamedicsApp/Pods-GuelpWellingtonParamedicsApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		296B6A122D4DDB50F57AD87F217DE7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1338,6 +1338,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87DBED8A23908DF1E8E17A95FC8F5296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649230D128B3C20AF9B674BD1AB59E3C /* Pods-ParamedicsApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParamedicsApp/Pods-ParamedicsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParamedicsApp/Pods-ParamedicsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1578,56 +1616,9 @@
 			};
 			name = Release;
 		};
-		E9C7CA1FB407DCDB85DD0975A934C21A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59B911B7BB0100284B64FDC70A4CB290 /* Pods-GuelpWellingtonParamedicsApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GuelpWellingtonParamedicsApp/Pods-GuelpWellingtonParamedicsApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GuelpWellingtonParamedicsApp/Pods-GuelpWellingtonParamedicsApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38154177284030F3B872D69F37A804C5 /* Build configuration list for PBXNativeTarget "Pods-GuelpWellingtonParamedicsApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1357B33F4051C268D7E73540B9684632 /* Debug */,
-				E9C7CA1FB407DCDB85DD0975A934C21A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1642,6 +1633,15 @@
 			buildConfigurations = (
 				BF84CEE3E74CC45CFFF305981F71FEF4 /* Debug */,
 				7D7FA246F5177868447D52CFAE529DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D2349E3CB2949AE9DB6D57B4718E81C /* Build configuration list for PBXNativeTarget "Pods-ParamedicsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071DA7151294A97F043F756385898298 /* Debug */,
+				87DBED8A23908DF1E8E17A95FC8F5296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

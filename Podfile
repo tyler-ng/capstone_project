@@ -1,9 +1,9 @@
 platform :ios, '13.0'
 
-target 'GuelpWellingtonParamedicsApp' do
+target 'ParamedicsApp' do
   use_frameworks!
 
-  # Pods for GuelpWellingtonParamedicsApp
+  # Pods for ParamedicsApp
   pod 'SkeletonView'
   pod 'VerticalSteppedSlider'
   pod 'Kingfisher', '~> 6.0'
